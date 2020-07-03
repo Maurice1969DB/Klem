@@ -1,0 +1,349 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.btn
+{
+  text-align: left !important;
+}
+
+.btn-light
+{
+  background-color: white !important;
+  line-height: 2.5 !important;
+  border-width: 2px;
+  -webkit-transition-property: background-color, color !important;
+  transition-property: background-color, color !important;
+  -webkit-transition-duration: 1s !important;
+  transition-duration: 1s !important;
+  -webkit-transition-timing-function: ease !important;
+  transition-timing-function: ease !important;
+
+}
+.btn-right
+{
+  background-color: forestgreen !important;
+  line-height: 2.5 !important;
+  color: white !important;
+  -webkit-transition-property: background-color, color !important;
+  transition-property: background-color, color !important;
+  -webkit-transition-duration: 1s !important;
+  transition-duration: 1s !important;
+  -webkit-transition-timing-function: ease !important;
+  transition-timing-function: ease !important;
+
+}
+
+.btn-false
+{
+
+  background-color: firebrick !important;
+  line-height: 2.5 !important;
+  -webkit-transition-property: background-color !important;
+  transition-property: background-color !important;
+  -webkit-transition-duration: 1s !important;
+  transition-duration: 1s !important;
+  -webkit-transition-timing-function: ease !important;
+  transition-timing-function: ease !important;
+
+}
+
+.btn-hint
+{
+
+  background-color: #ffc107 !important;
+  line-height: 2.5 !important;
+  -webkit-transition-property: background-color !important;
+  transition-property: background-color !important;
+  -webkit-transition-duration: 1s !important;
+  transition-duration: 1s !important;
+  -webkit-transition-timing-function: ease !important;
+  transition-timing-function: ease !important;
+  animation: blinker 1.7s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+
+}
+
+.btn-hint-green
+{
+
+  background-color: yellowgreen !important;
+  line-height: 2.5 !important;
+  -webkit-transition-property: background-color !important;
+  transition-property: background-color !important;
+  -webkit-transition-duration: 1s !important;
+  transition-duration: 1s !important;
+  -webkit-transition-timing-function: ease !important;
+  transition-timing-function: ease !important;
+  animation: blinker 1.7s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+
+}
+
+.btn-lg
+{
+  font-size: 1.6rem !important;
+}
+
+.row
+{
+  display: unset !important;
+}
+
+.row .main-klem
+{
+  display: flex !important;
+}
+
+.klem h2
+{
+  font-size: 24px;
+  margin: 0 !important;
+}
+
+.row .special-row
+{
+  padding-top: 5%;
+  padding-left: 2.5%;
+}
+
+.fade
+{
+  opacity: unset !important;
+}
+
+.progress
+{
+  padding-bottom: 0 !important;
+}
+
+.btn-space
+{
+  margin-right: 5px;
+}
+
+.klem-category
+{
+  text-align: center;
+  margin-left: 0 !important;
+  margin-bottom: 3px !important;
+  color: #538eb7;
+}
+
+.klem-question
+{
+  line-height: 1.5 !important;
+  text-align: center;
+  margin-left: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0.5rem;
+  color: white;
+  background-color: #538eb7;
+}
+
+.btn-info
+{
+  line-height: 2.5 !important;
+  text-align: center !important;
+  font-weight: bold !important;
+  margin-left: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0.5rem;
+  background-color: #EB9327 !important;
+  border-color: #EB9327 !important;
+}
+.container h3
+{
+  font-weight: normal !important;
+}
+
+.row
+{
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+#root .container
+{
+  max-width: 960px;
+}
+
+.list-group-item
+{
+  font-size: small !important;
+}
+
+@media screen {
+  .klem-category {
+    font-size: 30px !important;
+  }
+  .klem-question
+  {
+    font-size: 3rem !important;
+  }
+  .btn-info
+  {
+    font-size: 1.6rem !important;
+  }
+  .btn-light, .btn-right, .btn-false, .btn-hint, .btn-hint-green
+  {
+    padding-left: 3rem !important;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .klem-category {
+    font-size: 20px !important;
+  }
+  .btn-lg {
+    font-size: 1.5rem !important;
+  }
+  .klem-question
+  {
+    font-size: 2rem !important;
+  }
+
+  .btn-info
+  {
+    font-size: 1rem !important;
+  }
+
+  .btn-light, .btn-right, .btn-false, .btn-hint, .btn-hint-green
+  {
+    padding-left: 1rem !important;
+  }
+  h3
+  {
+    font-size: 1.25rem !important;
+  }
+  .container
+  {
+    max-width: none !important;
+    padding: 1rem !important;
+    margin: 0 !important;
+  }
+}
+
+@media screen and (max-width: 412px)
+{
+  .klem-category {
+    font-size: 15px !important;
+  }
+
+  .btn {
+    font-size: 1rem !important;
+  }
+
+  .klem-question
+  {
+    font-size: 1rem !important;
+  }
+  .btn-light, .btn-right, .btn-false, .btn-hint, .btn-hint-green
+  {
+    padding-left: 0.2rem !important;
+  }
+
+  .btn-info
+  {
+    font-size: 0.8rem !important;
+  }
+
+  h3
+  {
+    font-size: 1rem !important;
+  }
+
+  .container
+  {
+    max-width: none !important;
+    padding: 1rem !important;
+    margin: 0 !important;
+  }
+
+}
+
+@-webkit-keyframes shakeit {
+  0%, 100% {transform: translateX(0)}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px)}
+  20%, 40%, 60%, 80% {transform: translateX(10px)}
+}
+
+@keyframes shakeit {
+  0%, 100% {transform: translateX(0)}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px)}
+  20%, 40%, 60%, 80% {transform: translateX(10px)}
+}
+
+@keyframes fadeIn {
+  0%, 10% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes scaleText {
+  0% {transform: scale(.5, .5)}
+  100% {transform: scale(1,1)}
+}
+
+@-webkit-keyframes scaleText {
+  0% {transform: scale(.5, .5)}
+  100% {transform: scale(1,1)}
+}
+
+@keyframes blinker {
+   to {opacity: 0}
+}
+
+@-webkit-keyframes blinker {
+  to {opacity: 0}
+}
+
+.fadeIn
+{
+  animation-name: fadeIn;
+  -webkit-animation-duration: 2.75s;
+  animation-duration: 2.75s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.shake {
+  animation-name: shakeit;
+  -webkit-animation-duration: 0.82s;
+  animation-duration: 0.82s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.scale
+{
+  animation-name: scaleText;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
