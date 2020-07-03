@@ -9,7 +9,7 @@ import {motion} from "framer-motion";
 async function getKlem(node, apikey, token) {
     return axios({
         method: 'get',
-        url: 'https://steenhuispuzzels.nl' + "/api/content/"+parseInt(node)+"?API-KEY="+apikey+"&TOKEN="+token,
+        url: '**YOURURL***' + "/api/content/"+parseInt(node)+"?API-KEY="+apikey+"&TOKEN="+token,
         responseType: 'json'
     }).then((response) => {
 
@@ -23,7 +23,7 @@ async function getData(node, apikey, token) {
 
     return axios({
         method: 'get',
-        url: 'https://steenhuispuzzels.nl' + '/puzzel_data/puzzels/' + node,
+        url: '***YOURURL***' + '/puzzel_data/puzzels/' + node,
         headers: {
             APIKEY: apikey,
             TOKEN: token
@@ -40,7 +40,7 @@ async function saveData(node, apikey, token, data) {
 
     axios({
         method: 'put',
-        url: 'https://steenhuispuzzels.nl' + '/puzzel_data/puzzels/' + parseInt(node),
+        url: '***YOURURL***' + '/puzzel_data/puzzels/' + parseInt(node),
         headers: {
             APIKEY: apikey,
             TOKEN: token
@@ -106,7 +106,7 @@ function useSecureLocalStorage(key, initialValue)
             const credits = ls.get('Zlux');
 
             switch (key) {
-                case 'Zlux':
+                case '**CODE**':
                     if (item && item.value >= 0 && item.timeStamp > lastNight)
                     {
                         return item;
@@ -115,11 +115,11 @@ function useSecureLocalStorage(key, initialValue)
                     {
                         return initialValue;
                     }
-                case 'NDE':
+                case '**CODE**':
                 {
                     return item;
                 }
-                case 'tm2':
+                case '**CODE**':
                 {
                   if (item > 0) {
                     return item;
@@ -136,8 +136,8 @@ function useSecureLocalStorage(key, initialValue)
                     }
                     else
                     {
-                        ls.set('Zlux', 0);
-                        ls.set('NDE', false);
+                        ls.set('**CODE**', 0);
+                        ls.set('**CODE**', false);
                         return initialValue;
                     }
 
@@ -304,7 +304,7 @@ function CountDown(props) {
 
 function App(props) {
 
-    const {node, user, token, pubDate, creditsInit, timerInit, wrongAnswerCredits, timeEndCredits, hintCredits, creditsPerRoundInit, creditsOneTimeInit } = props;
+  const {node, user, token, pubDate, creditsInit, timerInit, wrongAnswerCredits, timeEndCredits, hintCredits, creditsPerRoundInit, creditsOneTimeInit } = props;
   const [games, setGames] = useState(null);
   const [currentGame, setCurrentGame] = useSecureLocalStorage('Yokp1', null);
   const [currentQuestion, setCurrentQuestion] = useState( 0);
@@ -425,7 +425,6 @@ function App(props) {
     let docs = [];
     let counter = 0;
 
-    //let data = [{id: 11785, klem_data: '[["Dieren","schildpad","hamster","bever","krokodil","wolf"],["knaagdier",0,1,1,0,0],["in De Fabeltjeskrant",1,1,1,0,1],["reptiel",1,0,0,1,0],["leeft in het water",1,0,1,1,0],["Toon __, vriend van Broer Konijn",1,0,0,0,0]]', position: 1 }];
     let data = getKlem(node, user.apikeys.api_service.api_key, user.apikeys.api_service.token);
       data.then(data => {
 
@@ -567,7 +566,6 @@ function App(props) {
           }, 1500);
       }
 
-      //setTimer(fixedTime);
 
   }
 
@@ -845,7 +843,6 @@ function App(props) {
       );
   }
 
-  // DCF9FE
   return (
       <Container style={{backgroundColor: '#cfecf1', boxShadow: "3px 3px 8px #ccc"}}>
           <Row>
