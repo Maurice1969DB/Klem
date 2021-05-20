@@ -55,10 +55,10 @@ import * as serviceWorker from './serviceWorker';
                 user.uid = "20585";
 
                 user.apikeys.puzzel_data = {};
-                user.apikeys.api_service.api_key = "HASFRr07mSq6dNxmtqC9bwN40BDGFH71p4UCMQhML80";
-                user.apikeys.api_service.token = "-3YMoUQSiEVJrECMEjKPLeewkDFBEXSua6_iD5TGpRM";
-                user.apikeys.puzzel_data.api_key = "DZ_X2Zl48TR8sLKoRRt-EkrwnhFz14c0qYzHvhdMt_0";
-                user.apikeys.puzzel_data.token = "WCDsnm3AcfT3Sf1aPkmdRNX-ukViBZg8nx0ZVmRu4co";
+                user.apikeys.api_service.api_key = "***API_KEY***";
+                user.apikeys.api_service.token = "***SERVICE_TOKEN***";
+                user.apikeys.puzzel_data.api_key = "***DATA_API_KEY***";
+                user.apikeys.puzzel_data.token = "***DATA_TOKEN***";
             }
 
             ReactDOM.render(<App node={id} user={user} token={token} pubDate={pubDate} creditsInit={credits} timerInit={timer}
